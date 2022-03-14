@@ -1,0 +1,192 @@
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left h2 {
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+.header-left li.material-icons {
+  color: rgb(239 115 88);
+  font-size: 1.3em;
+  cursor: pointer;
+  padding-left: 0.3em;
+}
+
+.edit {
+  font-size: 0.8em;
+  cursor: pointer;
+  margin-left: 3px;
+  font-weight: 600;
+}
+
+.category-container ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  gap: 3em;
+  width: 75%;
+  align-items: center;
+  margin: 4em auto 3em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #2E86C4;
+}
+
+.question-display-container, .answer-display-container, .edit-flashcard-container, .create-flashcard-container {
+  font-family: 'Source Code Pro', monospace;
+  width: 45%;
+  height: 35vh;
+  background-color: gb(253 253 253);
+  margin: 0 auto;
+  box-shadow: 0px 0px 1em rgb(0 0 0 / 20%);
+  border-radius: 4px;
+  padding: 3em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.difficult-txt {
+  font-family: 'Lato', sans-serif;
+}
+
+.question, .answer {
+  font-size: 1.3em;
+  padding: 0 0 2em 0;
+}
+
+.hint {
+  font-size: 0.9em;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hint-txt {
+  font-size: 0.8em; 
+}
+
+span.material-icons {
+  color: rgb(239 115 88);
+  font-size: 1.6em;
+  padding-right: 4px;
+}
+
+.question-display-container button {
+  margin: 1em 0 0 0;
+  width: 100%;
+}
+
+.answer {
+  border-bottom: 1px solid #2E86C4;
+  margin: 2em;
+  margin: 0 0 2em 0;
+}
+
+.reminder p {
+  font-size: 0.8em;
+  font-weight: 700;
+  color: rgb(239 115 88);
+}
+
+.reminder-btn {
+  display: flex;
+  gap: 0.5em;
+  justify-content: center;
+}
+
+.reminder-btn button {
+  margin-top: 1em;
+  width: 33%;
+}
+
+label {
+  float: left;
+  font-size: 0.9em;
+  font-weight: 700;
+  color: rgb(239 115 88);
+}
+
+.edit-flashcard-container, .create-flashcard-container {
+  height: 57vh;
+  padding: 3em 6em;
+}
+
+.edit-flashcard-container {
+  height: 60vh;
+}
+
+.edit-flashcard-container textarea, .create-flashcard-container textarea {
+  font-family: 'Lato', sans-serif;
+  background-color: #E4EBEF;
+  color: #2E86C4;
+  font-size: 1em;
+  padding: 1em;
+  margin-top: 10px;
+  outline: none;
+  resize: none;
+  width: 95%;
+  border: none;
+  border-radius: 4px;
+  height: 7vh;
+}
+
+.edit-flashcard-container button, .create-flashcard-container button {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.edit-flashcard-container button.delete {
+  background-color: rgb(192 192 192);
+}
+
+button.delete:hover {
+  background: rgb(232 102 74);
+}
+
+.flashcards-link {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+  li.edit.edit-txt {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  li.edit.edit-txt {
+    display: none;
+  }
+  .question-display-container, .answer-display-container {
+    height: 45vh;
+  }
+  .category-container ul {
+    margin: 1em auto 2em;
+  }
+  .question, .answer {
+    font-size: 100%;
+    padding: 0 0 1em 0;
+  }
+  .reminder-btn {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+  }
+  .reminder-btn button {
+    width: 120px;
+  }
+  .edit-flashcard-container, .create-flashcard-container {
+    height: 100%;
+    width: 70%;
+    padding: 20px;
+  }
+  .edit-flashcard-container textarea, .create-flashcard-container textarea {
+    width: 85%;
+  }
+}

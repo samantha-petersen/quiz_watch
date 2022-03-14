@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  color: rgb(22 119 187);
+  background-color: rgb(247 247 247);
+  margin-bottom: 80px;
+}
+
+.header-nav {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+}
+
+button, .button {
+  border: none;
+  background: rgb(239 115 88);
+  color: rgb(255 255 255);
+  padding: 1em;
+  border-radius: 4px;
+}
+
+button:hover, .button:hover {
+  background: rgb(232 102 74);
+  /* update above */
+}
+
+fieldset {
+  border: none;
+  padding: 0.6em 0;
+}
+input {
+  background-color: #E4EBEF;
+  border: none;
+  border-radius: 4px;
+  height: 4em;
+  width: 70%;
+  padding: 0 17px;
+  color: rgb(46 134 196);
+  box-sizing:border-box
+}
+::placeholder {
+  color: rgb(25 126 197);
+}
+
+.hide {
+  display: none
+}
+
+.quiz-watch {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h3 {
+  color: white;
+}
+
+#errors {
+  font-size: 0.7em;
+  font-weight: 600;
+  color: rgb(247 128 102);
+}
+
+#flashcards {
+  /* transform: scale(0); */
+}
+
+#answer {
+  display: none;
+}
+#reminder-container {
+  display: none;
+}
+
+#question {
+  display: none;
+}
+#hint {
+  display: none;
+}
+#answer-btn {
+  display: none;
+}
+
+.start-btn {
+  display: block;
+}
+
+#finished {
+  display: none;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+  color: rgb(213 213 213);
+}
+
+#card-created {
+  display: none;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+  color: rgb(213 213 213);
+}

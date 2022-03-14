@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Watch</title>
+  <!-- Stylesheet related -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/nav.css">
+  <link rel="stylesheet" href="./css/landing-page.css">
+  <link rel="stylesheet" href="./css/signup_login.css">
+  <link rel="stylesheet" href="./css/flashcards.css">
+  <link rel="stylesheet" href="./css/edit_flashcards.css">
+
+  <!-- Scripts related -->
+  <script type='text/javascript' src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./scripts/initialise.js" defer></script>
+  <script src="./scripts/header_nav.js" defer></script>
+  <script src="./scripts/landing.js" defer></script>
+  <script src="./scripts/signup_login.js" defer></script>
+  <script src="./scripts/flashcards_QnA.js" defer></script>
+  <script src="./scripts/flashcard_functions.js" defer></script>
+  <script src="./scripts/edit_flashcards.js" defer></script>
+  <script src="./scripts/toggle.js" defer></script>
+</head>
+
+<body>
+  <header id="header-nav" class="header-nav"></header>
+  <section id="signup" class="overlay modal1"></section>
+  <section id="login" class="overlay modal2"></section>
+  <main id="landing-page"></main>
+  <section id="category-container" class="category-container"></section>
+  <main id="question-display"></main>
+  <main id="create-card" class="create-card hide"></main>
+  <main id="all-flashcards" class="hide"></main>
+  <main id="flashcard"></main>
+</body>
+
+</html>
